@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/child_ly"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fragment_citizen_register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_last_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/last_name_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_last_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_first_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/first_name_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_first_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_date_of_birth_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/date_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_date_of_birth_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/calendar"
+                android:editable="false"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_gender_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/gender_title"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_citizen_register_gender_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_address_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/place_of_residence_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_citizen_register_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_specify_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/specify_str"
+            android:visibility="gone"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_specify_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_town_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/town_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_town_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_birth_order_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/birth_order_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_birth_order_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_birth_type_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/type_of_birth"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_citizen_register_birth_type_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

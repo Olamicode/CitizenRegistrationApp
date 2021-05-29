@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/father_ly"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fragment_citizen_register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_last_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/last_name_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_last_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_first_name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/first_name_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_first_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_martial_status_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/martial_status"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_citizen_register_martial_status_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_nationality_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/nationality"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_citizen_register_nationality_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_state_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/state_of_origin"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_citizen_register_state_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_ethnicity_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/ethnic_origin"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_ethnicity_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_education_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/education_level"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_education_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_occupation_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/occupation"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_occupation_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_phone_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/phone_number"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_citizen_register_national_no_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/national_id_no_str"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/primary_blue_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_citizen_register_national_no_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

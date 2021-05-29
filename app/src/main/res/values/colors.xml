@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue_100">#FF0465FB</color>
+    <color name="primary_blue_75">#BF0465FB</color>
+    <color name="primary_blue_50">#800465FB</color>
+    <color name="primary_blue_25">#400465FB</color>
+    <color name="primary_pink_100">#FFF20089</color>
+    <color name="primary_pink_75">#BFF20089</color>
+    <color name="primary_pink_50">#80F20089</color>
+    <color name="primary_pink_25">#40F20089</color>
+    <color name="primary_light_blue">#a2d2ff</color>
+    <color name="grey_100">#C4C4C4</color>
+    <color name="black">#FF000000</color>
+    <color name="black_text_color">#FF111111</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="background_color">#FAFAFA</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_blue">#FF0465FB</color>
+    <color name="list_item_color">#FAFAFA</color>
+    <color name="background_color_two">#F3F3F3</color>
+    <color name="black_50">#80000000</color>
+    <color name="green">#6DCC6D</color>
+    <color name="dark_green">#0B610B</color>
+    <color name="red">#9C0707</color>
+    <color name="yellow">#FFC107</color>
+    <color name="divider_color">#E6EAEE</color>
+</resources>
