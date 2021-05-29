@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "187813758456",
+    "project_id": "citizenregistrationapp",
+    "storage_bucket": "citizenregistrationapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187813758456:android:df63fce81393585c1c420d",
+        "android_client_info": {
+          "package_name": "com.olamachia.citizenregistrationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187813758456-ljo2k3a035caebh38h23c6i296vrstit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIP-tzO2uIBNQzwUWYEflRgmti2xt1Md0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187813758456-ljo2k3a035caebh38h23c6i296vrstit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

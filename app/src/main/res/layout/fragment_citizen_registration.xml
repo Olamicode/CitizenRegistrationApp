@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.dashboard.CitizenRegistrationFragment">
+
+    <!--TOOLBAR-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/general_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedSrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_citizen_register_step_one_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step_1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="36dp"
+                android:layout_marginStart="16sp"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/fragment_citizen_register_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/particulars_of_child_str"
+                android:textAlignment="center"
+                android:layout_marginStart="16sp"
+                android:textSize="16sp" />
+
+
+            <include
+                android:id="@+id/particular_of_child_ly"
+                layout="@layout/particular_of_child_layout" />
+
+            <include
+                android:id="@+id/particular_of_mother_ly"
+                layout="@layout/particular_of_mother_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/particular_of_father_ly"
+                layout="@layout/particular_of_father_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/particular_of_informant_ly"
+                layout="@layout/particular_of_informant_layout"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/previous_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/white"
+                    android:padding="30dp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/primary_blue_100"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_left_arrow" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <TextView
+                    android:id="@+id/fragment_citizen_register_continue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/continue_str"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/continue_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="@color/primary_blue_100"
+                    android:padding="30dp"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:id="@+id/continue_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
